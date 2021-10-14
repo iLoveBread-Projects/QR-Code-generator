@@ -9,7 +9,7 @@
 > If you want to download the program only, [click here](https://github.com/error404-69-dotcom/QR-Code-generator/raw/main/QRCodeGenerator/bin/Release/QRCodeGenerator.exe)
 
 ### *How to use the generator*
-1. Input a link in the textbox.
+1. Input a link or text in the textbox.
 2. * Click on *Generate* to show it in the application.
    * Click on *Save* to the directory the .exe file is located in.
 3. If you clicked on *Generate* you will be able to copy the QR code to your clipboard by **clicking on the image**.
