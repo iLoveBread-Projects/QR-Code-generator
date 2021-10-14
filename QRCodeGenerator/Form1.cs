@@ -87,21 +87,35 @@ namespace QRCodeGenerator
 
         private void picbxCode_MouseDoubleClick(object sender, EventArgs e)
         {
-            DialogResult question = MessageBox.Show("Do you want to copy the QR code to your clipboard?", "Warning", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
-
-            if (question == DialogResult.Yes)
+            if (picbxCode.Image != null)
             {
-                Image img = new Bitmap(picbxCode.Width, picbxCode.Height);
+                DialogResult question = MessageBox.Show("Are you sure that you want to copy the QR code?", "Warning", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
 
-                Graphics g = Graphics.FromImage(img);
+                if (question == DialogResult.Yes)
+                {
+                    try
+                    {
+                        Image img = new Bitmap(picbxCode.Width, picbxCode.Height);
 
-                g.CopyFromScreen(PointToScreen(picbxCode.Location), new Point(0, 0), new Size(picbxCode.Width, picbxCode.Height));
+                        Graphics g = Graphics.FromImage(img);
 
-                Clipboard.SetImage(img);
+                        g.CopyFromScreen(PointToScreen(picbxCode.Location), new Point(0, 0), new Size(picbxCode.Width, picbxCode.Height));
 
-                g.Dispose();
+                        Clipboard.SetImage(img);
+
+                        g.Dispose();
+                    }
+                    catch (Exception)
+                    {
+                        MessageBox.Show("There was an error while trying to copy the QR code", "Error", MessageBoxButtons.Ok, MessageBoxIcon.Error);
+                    }
+                }
+                else if (question == DialogResult.No)
+                {
+                    return;
+                }
             }
-            else if (question == DialogResult.No)
+            else
             {
                 return;
             }
