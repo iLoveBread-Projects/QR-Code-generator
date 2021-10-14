@@ -14,7 +14,9 @@
    * Click on *Save* to the directory the .exe file is located in.
 3. If you clicked on *Generate* you will be able to copy the QR code to your clipboard by **clicking on the image**.
 
-### *Explaining how the code works*
+<details open>
+<summary>### *Explaining how the code works*</summary>
+<br>
 > The main code is in the [Form1.cs](https://github.com/error404-69-dotcom/QR-Code-generator/blob/main/QRCodeGenerator/Form1.cs) file. You can follow along there if you want to know how to generator was made.
 > 
 > * The event when the *Generate* button is clicked.
@@ -107,5 +109,6 @@ private void picbxCode_MouseDoubleClick(object sender, EventArgs e)
         return;
     }
 ```
+</details>
 
 #### Enjoy the QR code generator and let me know if you think it is useful or not
