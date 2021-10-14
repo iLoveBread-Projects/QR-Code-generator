@@ -1,0 +1,10 @@
+F:\c#\QRCodeGenerator\QRCodeGenerator\bin\Debug\QRCodeGenerator.exe.config
+F:\c#\QRCodeGenerator\QRCodeGenerator\bin\Debug\QRCodeGenerator.exe
+F:\c#\QRCodeGenerator\QRCodeGenerator\bin\Debug\QRCodeGenerator.pdb
+F:\c#\QRCodeGenerator\QRCodeGenerator\obj\Debug\QRCodeGenerator.csproj.AssemblyReference.cache
+F:\c#\QRCodeGenerator\QRCodeGenerator\obj\Debug\QRCodeGenerator.Properties.Resources.resources
+F:\c#\QRCodeGenerator\QRCodeGenerator\obj\Debug\QRCodeGenerator.csproj.GenerateResource.cache
+F:\c#\QRCodeGenerator\QRCodeGenerator\obj\Debug\QRCodeGenerator.csproj.CoreCompileInputs.cache
+F:\c#\QRCodeGenerator\QRCodeGenerator\obj\Debug\QRCodeGenerator.exe
+F:\c#\QRCodeGenerator\QRCodeGenerator\obj\Debug\QRCodeGenerator.pdb
+F:\c#\QRCodeGenerator\QRCodeGenerator\obj\Debug\QRCodeGenerator.frmQRCodeGen.resources
