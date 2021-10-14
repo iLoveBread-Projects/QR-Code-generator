@@ -19,8 +19,7 @@
 
 
 #### Enjoy the QR code generator and let me know if you think it is useful or not
-<details closed>
-<summary* The event when the *Generate* button is clicked.</summary>
+<details><summary>* The event when the *Generate* button is clicked.</summary>
 <br>
 ```csharp
 private void btnGen_Click(object sender, EventArgs e)
