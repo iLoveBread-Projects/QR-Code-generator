@@ -6,7 +6,7 @@
 ### *How to install*
 > If you want to install the full project, then download the full repository and open the [QRCodeGenerator.sln](https://github.com/iLoveBread-Code/QR-Code-generator/blob/main/QRCodeGenerator.sln) file in Visual Studio Community.
 > 
-> If you want to download the program only, [click here](https://github.com/error404-69-dotcom/QR-Code-generator/raw/main/QRCodeGenerator/bin/Release/QRCodeGenerator.exe)
+> If you want to download the application only, [click here](https://github.com/error404-69-dotcom/QR-Code-generator/raw/main/QRCodeGenerator/bin/Release/QRCodeGenerator.exe)
 
 ### *How to use the generator*
 1. Input a link or text in the textbox.
