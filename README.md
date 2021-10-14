@@ -9,5 +9,5 @@
 > If you want to download the program only, [click here](https://github.com/error404-69-dotcom/QR-Code-generator/raw/main/QRCodeGenerator/bin/Release/QRCodeGenerator.exe)
 
 ### *How to use*
-* Input a link in the textbox.
-* Test
+1. Input a link in the textbox.
+2. * Click on *Generate* to show it in the application. * Click on *Save* to the directory the .exe file is located in.
