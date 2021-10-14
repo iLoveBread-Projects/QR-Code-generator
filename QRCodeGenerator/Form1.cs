@@ -24,6 +24,7 @@ namespace QRCodeGenerator
         public frmQRCodeGen()
         {
             InitializeComponent();
+            this.MaximizeBox = false;
         }
 
         private void btnGen_Click(object sender, EventArgs e)

@@ -17,3 +17,4 @@ C:\Users\Administrator\Desktop\GitHub projects\QR-Code-generator\QRCodeGenerator
 C:\Users\Administrator\Desktop\GitHub projects\QR-Code-generator\QRCodeGenerator\bin\Debug\QRCodeGenerator.exe.config
 C:\Users\Administrator\Desktop\GitHub projects\QR-Code-generator\QRCodeGenerator\bin\Debug\QRCodeGenerator.exe
 C:\Users\Administrator\Desktop\GitHub projects\QR-Code-generator\QRCodeGenerator\bin\Debug\QRCodeGenerator.pdb
+C:\Users\Administrator\Desktop\GitHub projects\QR-Code-generator\QRCodeGenerator\obj\Debug\QRCodeGenerator.csproj.AssemblyReference.cache
