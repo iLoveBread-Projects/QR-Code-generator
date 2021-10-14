@@ -4,9 +4,9 @@
 > It is a open source generator which creates a QR code for the given link or text. You can copy, save or just generate a QR code of choice. **The code is written in C#** and uses a **Google API**
 
 ### *How to install*
-> If you want to install the full project, then download the full repository.
+> If you want to install the full project, then download the full repository and open the [QRCodeGenerator.sln](https://github.com/iLoveBread-Code/QR-Code-generator/blob/main/QRCodeGenerator.sln) file in Visual Studio Community.
 > 
-> If you want to download the program only, [click here](https://github.com/error404-69-dotcom/QR-Code-generator/raw/main/QRCodeGenerator/bin/Release/QRCodeGenerator.exe)
+> If you want to download the application only, [click here](https://github.com/error404-69-dotcom/QR-Code-generator/raw/main/QRCodeGenerator/bin/Release/QRCodeGenerator.exe)
 
 ### *How to use the generator*
 1. Input a link or text in the textbox.
@@ -53,20 +53,33 @@ private void btnSave_Click(object sender, EventArgs e)
 {
     if (txtLink.Text != "")
     {
-        string name = txtLink.Text.Replace("/", "");
-        var url = string.Format("http://chart.apis.google.com/chart?cht=qr&chs={1}x{2}&chl={0}", txtLink.Text, 180, 180);
-        WebResponse response = default(WebResponse);
-        Stream remoteStream = default(Stream);
-        StreamReader readStream = default(StreamReader);
-        WebRequest request = WebRequest.Create(url);
-        response = request.GetResponse();
-        remoteStream = response.GetResponseStream();
-        readStream = new StreamReader(remoteStream);
-        System.Drawing.Image img = System.Drawing.Image.FromStream(remoteStream);
-        img.Save($"{name}.png");
-        response.Close();
-        remoteStream.Close();
-        readStream.Close();
+        try
+        {
+            var regexSearch = new string(Path.GetInvalidFileNameChars()) + new string(Path.GetInvalidPathChars());
+            var r = new Regex(string.Format("[{0}]", Regex.Escape(regexSearch)));
+            name = r.Replace(txtLink.Text, "");
+            if (name.Length > 20)
+                name = name.Substring(0, 20);
+            var url = string.Format("http://chart.apis.google.com/chart?cht=qr&chs={1}x{2}&chl={0}", txtLink.Text, 180, 180);
+            WebResponse response = default(WebResponse);
+            Stream remoteStream = default(Stream);
+            StreamReader readStream = default(StreamReader);
+            WebRequest request = WebRequest.Create(url);
+            response = request.GetResponse();
+            remoteStream = response.GetResponseStream();
+            readStream = new StreamReader(remoteStream);
+            System.Drawing.Image img = System.Drawing.Image.FromStream(remoteStream);
+            Console.WriteLine(name);
+            Console.WriteLine(name.Length);
+            img.Save($@".\{name}.png");
+            response.Close();
+            remoteStream.Close();
+            readStream.Close();
+        }
+        catch (Exception)
+        {
+            MessageBox.Show("Could not save the QR code", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+        }
     }
     else
     {
