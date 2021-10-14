@@ -46,7 +46,7 @@ private void btnGen_Click(object sender, EventArgs e)
 </details>
 
 
-<details closed><summary>The event when the *Save* button is clicked.</suummary>
+<details closed><summary>The event when the *Save* button is clicked.</summary>
   
 ```csharp
 private void btnSave_Click(object sender, EventArgs e)
