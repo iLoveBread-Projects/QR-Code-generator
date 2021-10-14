@@ -9,14 +9,14 @@
 > If you want to download the program only, [click here](https://github.com/error404-69-dotcom/QR-Code-generator/raw/main/QRCodeGenerator/bin/Release/QRCodeGenerator.exe)
 
 ### *How to use the generator*
-1. Input a link in the textbox.
+1. Input a link or text in the textbox.
 2. * Click on *Generate* to show it in the application.
    * Click on *Save* to the directory the .exe file is located in.
 3. If you clicked on *Generate* you will be able to copy the QR code to your clipboard by **clicking on the image**.
 4. If you click on *Clear* you will clear the QR code and the text box from the application, so you can start from scratch again.
 
 ### *Explaining the code*
-> The main code is in the [Form1.cs](https://github.com/error404-69-dotcom/QR-Code-generator/blob/main/QRCodeGenerator/Form1.cs) file. You can follow along there if you want to know how to generator was made.
+> The main code is in the [Form1.cs](https://github.com/error404-69-dotcom/QR-Code-generator/blob/main/QRCodeGenerator/Form1.cs) file. You can follow along there if you want to know how the generator was made.
 
 <details closed><summary>The event when the Generate button is clicked.</summary>
 
