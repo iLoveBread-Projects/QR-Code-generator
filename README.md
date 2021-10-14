@@ -76,7 +76,7 @@ private void btnSave_Click(object sender, EventArgs e)
 
 </details>
 
-<details><summmary>The event when the Clear button is clicked.</summary>
+<details><summary>The event when the Clear button is clicked.</summary>
 
 ```csharp
 private void btnClear_Click(object sender, EventArgs e)
