@@ -5,5 +5,4 @@
 
 ### *How to install*
 > If you want to install the full project, then download the full repository.
-> 
 > If you want to download the program only, [click here](https://github.com/error404-69-dotcom/QR-Code-generator/raw/main/QRCodeGenerator/bin/Release/QRCodeGenerator.exe)
