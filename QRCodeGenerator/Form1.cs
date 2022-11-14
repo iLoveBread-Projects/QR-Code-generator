@@ -71,7 +71,7 @@ namespace QRCodeGenerator
                     System.Drawing.Image img = System.Drawing.Image.FromStream(remoteStream);
                     Console.WriteLine(name);
                     Console.WriteLine(name.Length);
-                    img.Save($@".\{name}.png");
+                    img.Save($@".\qr\{name}.png");
                     response.Close();
                     remoteStream.Close();
                     readStream.Close();
